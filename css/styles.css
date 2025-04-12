@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.choice-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice-btn:hover {
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+.choice-btn i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.results {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    min-height: 100px;
+    white-space: pre-line;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.score {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.game-info {
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+.reset-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
+
+.choice-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.choice-box {
+    text-align: center;
+    width: 120px;
+}
+
+.choice-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .choices {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .choice-btn {
+        width: 100%;
+        border-radius: 5px;
+        height: 60px;
+    }
+}
